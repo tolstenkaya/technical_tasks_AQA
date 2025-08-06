@@ -11,4 +11,9 @@ public class Main {
         if (isVip) return basePrice * 0.9;
         return basePrice;
     }
+
+    public static String greet(String name) {
+        if (name == null || name.isEmpty()) throw new IllegalArgumentException();
+        return "Hello, " + name;
+    }
 }
